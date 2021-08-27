@@ -1,4 +1,3 @@
-package java;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -13,19 +12,23 @@ public class lab3 {
         ArrayList<String> regX = new ArrayList<>();
         ArrayList<String> testers = new ArrayList<>();
         ArrayList<Boolean> results = new ArrayList<>();
-        ArrayList<Integer> resultsCode = new ArrayList<>();
+        //ArrayList<Integer> resultsCode = new ArrayList<>();
+        
         Scanner sc = new Scanner(System.in);
         in = sc.nextInt();
 
         for (int i = 0; i < in; i++) {
             Scanner sca = new Scanner(System.in);
             String x = sca.nextLine();
+            //sca.close();
             regX.add(x);
         }
         inputs = sc.nextInt();
+        
         for (int i = 0; i < inputs; i++) {
             Scanner sca = new Scanner(System.in);
             String x = sca.nextLine();
+            sca.close();
             testers.add(x);
             results.add(Boolean.FALSE);
         }
@@ -57,7 +60,7 @@ public class lab3 {
                 System.out.println("NO");
             }
 
-        }
+        }sc.close(); 
 
     }
 
