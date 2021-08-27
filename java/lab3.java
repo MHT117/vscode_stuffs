@@ -1,3 +1,5 @@
+package java;
+
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -20,7 +22,7 @@ public class lab3 {
         for (int i = 0; i < in; i++) {
             Scanner sca = new Scanner(System.in);
             String x = sca.nextLine();
-            //sca.close();
+            sca.close();
             regX.add(x);
         }
         inputs = sc.nextInt();
